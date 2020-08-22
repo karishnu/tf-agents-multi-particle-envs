@@ -131,6 +131,8 @@ def spec_from_gym_space(space: gym.Space,
     return collections.OrderedDict([
         (key, nested_spec(s, key)) for key, s in space.spaces.items()
     ])
+  elif isinstance(space, list):
+    return [spec_from_gym_space(s) for s in space]
   else:
     raise ValueError(
         'The gym space {} is currently not supported.'.format(space))
