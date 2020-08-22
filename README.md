@@ -1,9 +1,11 @@
-**Status:** Archive (code is provided as-is, no updates expected)
-
-# Multi-Agent Particle Environment
+# TF-Agent Compatible Multi-Agent Particle Environment
 
 A simple multi-agent particle world with a continuous observation and discrete action space, along with some basic simulated physics.
 Used in the paper [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/pdf/1706.02275.pdf).
+
+This repo is essentially a fork of the original [multiagent-particle-envs](https://github.com/openai/multiagent-particle-envs) repo
+with a few fixes to get it working with [TF-Agents](https://github.com/tensorflow/agents). This will enable us to deploy multi-agent
+experiments using TF-Agents and compare scores with previous experiments using the same environments.
 
 ## Getting started:
 
